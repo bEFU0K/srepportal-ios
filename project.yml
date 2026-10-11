@@ -6,9 +6,12 @@ targets:
     type: application
     platform: iOS
     deploymentTarget: "15.0"
-    sources: [SrepPortal]
+    sources:
+      - path: .
+        includes:
+          - "*.swift"
     info:
-      path: SrepPortal/Info.plist
+      path: Info.plist
       properties:
         CFBundleDisplayName: SrepPortal
         UILaunchScreen: {}
