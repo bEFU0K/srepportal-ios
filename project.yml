@@ -1,0 +1,21 @@
+name: SrepPortal
+options:
+  bundleIdPrefix: ru.srep
+targets:
+  SrepPortal:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [SrepPortal]
+    info:
+      path: SrepPortal/Info.plist
+      properties:
+        CFBundleDisplayName: SrepPortal
+        UILaunchScreen: {}
+        NSMicrophoneUsageDescription: Микрофон нужен для звонков
+        NSCameraUsageDescription: Камера нужна для видео и фото
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ru.srep.portal
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
